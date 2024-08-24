@@ -1,0 +1,336 @@
+.requestsList {
+    display: grid;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    gap: 1.5rem;
+}
+
+.react-tabs__tab-panel--selected {
+    display: grid;
+}
+
+.requestCard {
+    /* border-radius: 24px;
+    outline: 1px solid rgb(45, 53, 113);
+    box-shadow: 0px 5px 4px 1px rgb(96, 96, 96);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden; */
+    --border-color: rgba(128, 128, 128, 0.4);
+    --background-color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    border-radius: 1rem;
+    background-color: rgb(214, 234, 251);
+    /* transform: translateX(50%); */
+    overflow: hidden;
+    animation: loadCard 0.4s ease-out;
+    z-index: 0;
+    /* height: 19rem; */
+    border: 1px solid var(--border-color);
+    box-shadow: -1px 1px 6px 1px var(--border-color);
+    padding: 0.4em;
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    margin: 2rem 2rem 2rem;
+}
+
+.requestImage {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    height: 204px;
+    width: 204px;
+}
+
+.requestImage img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 2rem 2rem 1rem;
+    gap: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bookBtn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    min-width: 64px;
+    transition: none 0s ease 0s;
+    box-shadow: none;
+    /* background: rgb(40, 101, 154); */
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+    appearance: revert;
+    border-radius: 1000px;
+    height: 43px;
+    outline: revert;
+    padding: 20px 40px;
+    -webkit-tap-highlight-color: revert;
+    border: 1px solid rgb(0, 64, 119);
+    color: rgb(255, 255, 255);
+
+}
+
+.bookBtn:hover,
+.bookBtn:focus {
+    background-color: #023047;
+    color: rgb(255, 255, 255);
+}
+
+.bookBtn:active {
+    background-color: rgb(62, 113, 157);
+    color: rgb(255, 255, 255, .7);
+}
+
+.acceptBtn {
+    background-color: rgb(8, 86, 155);
+}
+
+.rejectBtn {
+    background-color: rgb(170, 0, 0);
+}
+
+.requestDetails101 {
+    display: flex;
+
+}
+
+/* .name{
+    color: rgb(31, 31, 31);;
+    line-height: 160%;
+    font-family: Helvetica,sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.location{
+    color: rgb(31, 31, 31);;
+    line-height: 160%;
+    font-family: Helvetica,sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+} */
+.requestDetails2 {
+    display: flex;
+
+}
+
+.clName {
+    color: rgb(31, 31, 31);
+    ;
+    line-height: 160%;
+    font-family: Helvetica, sans-serif;
+    /* margin-bottom: 10px; */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.locName {
+    color: rgb(31, 31, 31);
+    ;
+    line-height: 160%;
+    font-family: Helvetica, sans-serif;
+    /* margin-bottom: 10px; */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.requestDetails2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.requestDetails2 span {
+    color: rgb(31, 31, 31);
+    ;
+    line-height: 100%;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    /* margin-bottom: 1rem; */
+}
+
+.service {
+    color: rgb(31, 31, 31);
+    ;
+    line-height: 100%;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.requestBtnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactTabs {
+    /* width: 40%; */
+    display: grid;
+}
+
+.reactTablist {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.reactTablist .Tab {
+    font-size: 2rem;
+}
+
+.requestCard .requestBtnContainer span.acceptedText {
+    line-height: 160%;
+    font-family: Helvetica, sans-serif;
+    /* margin-bottom: 10px; */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(0, 111, 0);
+}
+
+.requestCard .requestBtnContainer span.rejectedText {
+    color: rgb(170, 0, 0);
+    line-height: 160%;
+    font-family: Helvetica, sans-serif;
+    /* margin-bottom: 10px; */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* .reactTab{
+    font-size: 1rem;
+} */
+/* .requestCard .service{
+    grid-column: 2/4;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+
+.requestCard .requestBtnContainer button:first-child{
+    background-color: greenyellow;
+}
+
+.requestCard .requestBtnContainer button:last-child{
+    background-color: #ce3b3b;
+}
+
+.requestCard .requestBtnContainer span.acceptedText{
+    color: green
+}
+
+.requestCard .requestBtnContainer span.rejectedText{
+    color: red
+}
+
+/* .requestCard * {
+    outline: 1px solid red;
+} */
+.mainPage {
+    width: 100%;
+    margin: auto;
+    /* background-color:bisque; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.refreshButton {
+    place-self: end;
+    position: relative;
+    --border-color: rgba(128, 128, 128, 0.4);
+    --text-color: black;
+    --background-color: rgba(255, 255, 255, 0.8);
+    margin: 0.5em;
+    padding: 0.8em;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75em;
+    box-shadow: -1px 1px 6px 1px var(--border-color);
+    transform: translateX(-2px) translateY(-2px);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.refreshButton:hover {
+    transform: translateX(0px) translateY(0px);
+    box-shadow: 1px 1px 4px 0px var(--border-color);
+}
+
+.refreshButton::after {
+    content: "";
+    background-color: green;
+    position: absolute;
+    display: none;
+}
+
+.refreshButton[data-state="loading"] {
+    transform: translateX(0px) translateY(0px);
+    box-shadow: none;
+    /* --text-color: yellow; */
+    /* --border-color: yellow; */
+}
+
+.refreshButton[data-state="loading"]::after {
+    display: block;
+    /*   width:100%; */
+    animation: loader 1s ease infinite;
+    height: 4px;
+}
+
+@keyframes loader {
+    0% {
+        left: 4%;
+        width: 0%;
+    }
+
+    50% {
+        left: 4%;
+        width: 92%;
+    }
+
+    100% {
+        left: 96%;
+        width: 0%;
+    }
+}

@@ -1,0 +1,46 @@
+.main-section{
+    height: 800px;  
+    display: flex;
+}
+
+.info-div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+   position: absolute;
+   left: 200px;
+}
+
+.personal-det{
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.para{
+    width: 55%;
+    font-size: 1.3rem;
+    margin: 10px 0 10px 0;
+    line-height: 2.5rem;
+}
+
+.heading{
+    color: rgb(88, 88, 88);
+    font-size:2.7rem;
+}
+
+
+
+

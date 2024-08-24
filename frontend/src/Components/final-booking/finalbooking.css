@@ -1,0 +1,265 @@
+.slogan{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(214, 234, 251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan img{
+    height: 3rem;
+    width: 3rem;
+   margin-right: 1rem;
+}
+
+.main-final-booking{
+    width: 100%;
+    display: flex;
+    height: 50rem;
+
+}
+
+.task-description{
+    width: 40%;
+    height: 39rem;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    border: 0.02rem solid rgb(191, 194, 193);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.task-description h4{
+    font-size: 1.3rem;
+    margin: 0 0 2.5rem;
+}
+
+.task-detail{
+
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(84, 87, 86);
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-family: Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4375em;
+    letter-spacing: -0.005em;
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-area{
+    font: inherit;
+    letter-spacing: inherit;
+    border: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    color: rgb(62, 68, 66);
+    background: none;
+    height: auto;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    width: 100%;
+    resize: none;
+}
+
+.text-area:focus{
+    outline: 0px;
+    box-shadow: none;
+}
+
+.add-des{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    min-width: 64px;
+    transition: none 0s ease 0s;
+    box-shadow: none;
+    background: rgb(40, 101, 154);
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+    appearance: revert;
+    border-radius: 1000px;
+    height: 48px;
+    outline: revert;
+    padding: 20px 30px;
+    -webkit-tap-highlight-color: revert;
+    border: 1px solid rgb(0, 64, 119);
+    color: rgb(255, 255, 255);
+
+}
+
+.add-des:hover,
+.add-des:focus { 
+  background-color: rgb(8, 86, 155);
+  color: rgb(255, 255, 255);
+}
+
+.add-des:active {
+  background-color: rgb(62, 113, 157);
+  color: rgb(255, 255, 255, .7);
+}
+
+.task-description img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.break{
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgb(191, 194, 193);
+    margin: 2.5rem 0rem;
+}
+
+.logo-para{
+    margin: 16px 0px 0px;
+    color: rgb(82, 84, 83);
+    font-family: Helvetica,sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+.confirmation-sec{
+    width: 25%;
+    margin-top: 5rem;
+    margin-right: 15rem;
+}
+
+.service-details{
+    width: 100%;
+    border: 0.02rem solid rgb(191, 194, 193);
+    border-radius: 1.5rem;
+    background-color: white;
+    height: 29rem;
+    margin-bottom: 2rem;
+}
+
+.detail-and-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(40, 101, 154);
+    border: 2px solid rgb(0, 64, 119);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000000;
+    transition: all 0.3s ease;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #fff;
+    color: rgb(40, 101, 154);
+    border: 2px solid rgb(0, 64, 119);
+    box-shadow: 5px 5px 0px rgb(40, 101, 154);
+  }
+  
+  .confirm-btn:active {
+    background-color: rgb(43, 150, 189);
+    box-shadow: none;
+    transform: translateY(4px);
+    color: #fff;
+  }
+
+  .service-profile-sec{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(214, 234, 251);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+  }
+
+  .service-profile-sec h3{
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+  }
+
+  .service-sec-image{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    height: 150px;
+    width: 150px;
+  }
+
+  .service-sec-image img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
+  }
+
+  .service-profile-sec p{
+    font-size: 1.1rem;
+  }
+
+  .service-confirm-det{
+    padding: 1.5rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .service-confirm-det img{
+    height: 2rem;
+    width:2rem;
+   margin-right: 2rem;
+  }
+
+  .single-det{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .single-det span{
+    color: rgb(47, 47, 47);
+    font-family: Helvetica,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+  }

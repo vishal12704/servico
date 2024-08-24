@@ -1,0 +1,151 @@
+.banner {
+    min-height: 80vh;
+    background-image: url(/images/electrical.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-info {
+    background-color: #fff;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    /* justify-content: center; */
+}
+
+.banner-info h1 {
+    font-size: 2.5rem;
+}
+
+.divider {
+    /* color: black; */
+    background-color: black;
+    height: 2px;
+    width: 100px;
+}
+
+.banner-info p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-btn {
+    font-size: 1.2rem;
+    width: 150px;
+    color: #fff;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+/* SERVICE INFORMATION */
+.service-info {
+    min-height: 50vh;
+    background-color: rgb(214, 234, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-wrap {
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(228, 221, 221); */
+    height: 500px;
+    width: 1200px;
+}
+
+.service-txt {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.service-txt h1 {
+    text-align: left;
+}
+
+.service-txt p {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.service-img img {
+    /* background-color: bisque; */
+    margin-left: 50px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* how it works */
+.how-it-works {
+    /* background-color: rgb(226, 239, 251); */
+    /* background-color: antiquewhite; */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.works-heading h1 {
+    font-size: 2rem;
+}
+
+.how-works-content {
+    width: 500px;
+    /* background-color: aqua; */
+    padding: 10px 10px 10px 50px;
+    ;
+}
+
+.choose-tasker {
+    margin-top: 20px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-it-done {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* READY TO HIRE */
+.ready-to-hire {
+    /* background-color: aqua; */
+    background-color: rgb(214, 234, 251);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.ready-img img {
+    margin: 30px 40px 30px 100px;
+}
+
+.ready-txt h1 {
+    font-size: 2rem;
+}
+
+.ready-txt .service-btn {
+    width: 250px;
+}

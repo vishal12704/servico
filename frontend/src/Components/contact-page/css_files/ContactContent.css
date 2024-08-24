@@ -1,0 +1,37 @@
+.contact-first-box {
+    background-color: #023047;
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+
+.contact-img {
+    background-image: url(./src/assets/contact.jpg);
+    height: 430px;
+    width: 70%;
+    background-size: cover;
+    margin: 30px 0 0 30px;
+}
+
+.contact-company-info {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}

@@ -1,0 +1,215 @@
+/* .card *{
+    outline: 2px solid yellow;
+} */
+
+.servicemenCard{
+    display: flex;
+    border-radius: 1rem;
+    width: 90%;
+    background-color: rgb(214, 234, 251);
+    /* transform: translateX(50%); */
+    overflow: hidden;
+    animation: loadCard 0.4s ease-out;
+    z-index: 0;
+    height: 23rem;
+    border: 0.02rem solid rgb(191, 194, 193);
+}
+
+.servicemenCard .leftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 2rem 2rem 2rem;
+}
+
+.servicerImg{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    height: 204px;
+    width: 204px;
+}
+.servicerImg img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
+}
+
+.completeProfile a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #023047;
+    text-decoration: none;
+}
+
+.bookBtn{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    min-width: 64px;
+    transition: none 0s ease 0s;
+    box-shadow: none;
+    /* background: rgb(40, 101, 154); */
+    background: #023047;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: normal;
+    appearance: revert;
+    border-radius: 1000px;
+    height: 43px;
+    outline: revert;
+    padding: 20px 40px;
+    -webkit-tap-highlight-color: revert;
+    border: 1px solid rgb(0, 64, 119);
+    color: rgb(255, 255, 255);
+
+}
+
+.bookBtn:hover,
+.bookBtn:focus { 
+  background-color: rgb(8, 86, 155);
+  color: rgb(255, 255, 255);
+}
+
+.bookBtn:active {
+  background-color: rgb(62, 113, 157);
+  color: rgb(255, 255, 255, .7);
+}
+
+.servicemenCard .rightContainer{
+    z-index: -1;
+    transform: translateX(-101%);
+    animation: slideRightContainer 0.6s ease-out forwards;
+    animation-delay: 0.5s;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem 2rem 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nameAndPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    margin-right: 20px;
+}
+
+.nameAndPrice h1{
+    color: rgb(31, 31, 31);;
+    line-height: 160%;
+    font-family: Helvetica,sans-serif;
+    margin-bottom: 10px;
+}
+
+.logo label{
+    color: rgb(67, 67, 67);;
+    font-size: 1.1rem;
+    line-height: 160%;
+    font-family: Helvetica,sans-serif;
+    font-weight: 400;
+}
+
+.servicemenCard .rightContainer > div svg{
+    transform: translateY(1px);
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+
+.help h2{
+    color: rgb(58, 58, 58);
+    margin-top: 1rem;
+    font-family: Helvetica,sans-serif;
+}
+
+.about{
+    font-family: Helvetica,sans-serif;
+    font-size: 1rem;
+}
+
+/* ReviewsModal */
+.modalOverlay{
+    background-color: #023047;
+    min-width: 600px;
+    min-height: 368px;
+    color: black;
+    position: fixed;
+    top: 267px;
+    left: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: rgb(214, 234, 251);
+    overflow: hidden;
+    animation: loadCard 0.4s ease-out;
+    z-index: 0;
+    border: 0.02rem solid rgb(191, 194, 193);
+    border-left: none;
+
+}
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+
+@media screen and (max-width:480px){
+    .servicemenCard .leftContainer{
+        border-top-right-radius: 0px;
+    }
+    .servicemenCard .rightContainer{
+        grid-row: 1/6;
+    }
+}
+
+@keyframes loadCard {
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightContainer {
+    from{
+        transform: translateX(-101%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
